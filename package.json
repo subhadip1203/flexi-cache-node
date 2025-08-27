@@ -1,6 +1,6 @@
 {
   "name": "flexi-cache-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js cache with TTL/LRU, tags, disk persistence, AES-GCM encryption.",
   "license": "MIT",
   "sideEffects": false,
