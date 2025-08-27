@@ -1,36 +1,60 @@
 {
-    "name": "flexi-cache-node",
-    "version": "1.0.0",
-    "description": "Node.js cache with TTL/LRU, tags, disk persistence, AES-GCM encryption.",
-    "license": "MIT",
-    "sideEffects": false,
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "types": "dist/esm/index.d.ts",
-    "exports": {
-        ".": {
-            "types": "./dist/esm/index.d.ts",
-            "import": "./dist/esm/index.js",
-            "require": "./dist/cjs/index.js"
-        }
-    },
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "clean": "rimraf dist",
-        "build:esm": "tsc -p tsconfig.esm.json",
-        "build:cjs": "tsc -p tsconfig.cjs.json",
-        "build": "npm run clean && npm run build:esm && npm run build:cjs",
-        "prepare": "npm run build",
-        "test": "jest"
-    },
-    "devDependencies": {
-        "@types/jest": "^30.0.0",
-        "@types/node": "^22.5.4",
-        "jest": "^30.0.5",
-        "rimraf": "^6.0.1",
-        "ts-jest": "^29.4.1",
-        "typescript": "^5.4.3"
+  "name": "flexi-cache-node",
+  "version": "1.0.0",
+  "description": "Node.js cache with TTL/LRU, tags, disk persistence, AES-GCM encryption.",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
     }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/subhadip1203/flexi-cache-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/subhadip1203/flexi-cache-node/issues"
+  },
+  "homepage": "https://github.com/subhadip1203/flexi-cache-node#readme",
+  "keywords": [
+    "cache",
+    "node cache",
+    "ttl",
+    "lru",
+    "tags",
+    "node",
+    "typescript",
+    "encryption",
+    "aes",
+    "persistence"
+  ],
+  "author": {
+    "name": "Subhadip Pahari",
+    "url": "https://github.com/subhadip1203"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.5.4",
+    "jest": "^30.0.5",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.4.1",
+    "typescript": "^5.4.3"
+  }
 }
